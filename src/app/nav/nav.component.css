@@ -1,0 +1,19 @@
+.dropdown-toggle, .dropdown-item{
+    cursor: pointer;
+}
+
+.bg-blue {
+    background-color: #7CB9E8;
+}
+
+.nav-link {
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: .1em;
+    margin-right: 2rem;
+}
+
+.nav-link:active, .nav-link:hover {
+    border-bottom: 2px solid white;
+}

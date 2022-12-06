@@ -1,0 +1,81 @@
+body {
+    font-family: 'Urbanist', sans-serif;
+    height: 100vh;
+    min-height: 100%;
+  }
+
+.section1 {
+    background-color: var(--primary);
+}
+
+.logo {
+    margin-top: 0;
+    color: white;
+    font-size: 5em;
+    font-weight: 600;
+}
+
+
+
+.box {
+    display: flex;
+    align-items:center;
+ }
+
+.pics {
+    width: 500px;
+    height: 500px;
+}
+
+.section2 {
+    background-color: white;
+}
+
+.subtext {
+    color: white;
+    font-size: 2.5em;
+    font-weight: 400;
+}
+
+.title {
+    margin-top: 30vh;
+}
+
+.cabbage {
+    margin-left: 15px;
+}
+
+.textbox {
+    margin-left: .8em;
+    width: 70%;
+    height: 4em;
+    padding-left: 1em;
+}
+.cabbage {
+    margin-top: 3rem;
+    margin-right: 0;
+}
+
+.cabbage img {
+    width: 40rem;
+}
+
+.homepic img {
+    width: 25rem;
+}
+
+.homepic {
+    margin-top: 0;
+    margin-right: 40px;
+    margin-left: auto;
+}
+
+button {
+    border: none;
+    background-color: var(--secondary);
+}
+
+button:hover, button:active {
+    border: none;
+    background-color: #1b59a0;
+}

@@ -1,0 +1,60 @@
+    <!-- contact section -->
+  
+    <body class="contact_section layout_padding mt-4">
+        <div class="container ">
+          <div class="heading_container">
+            <h2 class="text text-center">
+              Contact Us
+            </h2>
+          </div>
+        </div>
+        <div class="container">
+              <form [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+                <div class="form-group">
+                  <span class="text-danger form-text"
+                                  *ngIf="(formControls.name.touched) && formControls.name.errors?.required">
+                                  Name is required
+                              </span>
+                  <input type="text" class="form-control" formControlName="name" placeholder="Name" />
+                </div>
+                <div class="form-group">
+                  <span class="text-danger form-text"
+                                  *ngIf="(formControls.email.touched) && formControls.email.errors?.required">
+                                  Email is required
+                              </span>
+                              <span class="text-danger form-text"
+                                  *ngIf="(formControls.email.touched) && formControls.email.errors?.email">
+                                  Email is invalid
+                              </span>
+                  <input type="email" class="form-control" formControlName="email" placeholder="Email" />
+                </div>
+                <div  class="form-group">
+                  <span class="text-danger form-text"
+                                  *ngIf="(formControls.phoneNumber.touched) && formControls.phoneNumber.errors?.required">
+                                  Phone number is required
+                              </span>
+                  <span class="text-danger form-text"
+                                  *ngIf="(formControls.phoneNumber.touched) && formControls.phoneNumber.errors?.minlength">
+                                  Phone number must at least be 10 numbers
+                              </span>
+                  <span class="text-danger form-text"
+                                  *ngIf="(formControls.phoneNumber.touched) && formControls.phoneNumber.errors?.maxlength">
+                                  Phone number must at most be 11 numbers and a plus (+) sign
+                              </span>
+                  <input type="text" class="form-control" formControlName="phoneNumber" placeholder="Phone Number" />
+                </div>
+                <div class="form-group">
+                  <span class="text-danger form-text"
+                                  *ngIf="(formControls.message.touched) && formControls.message.errors?.required">
+                                  Message is required
+                              </span>
+                  <textarea type="text" class="form-control" formControlName="message" class="message-box" placeholder="Message"></textarea>
+                </div>
+                <div class="d-flex ">
+                  <button type="submit" [disabled]="!FormData.valid" class="btn btn-secondary" style="margin-top: 1.4em;">Send</button>
+                </div>
+              </form>
+            </div>
+        </body>
+    
+      <!-- end contact section -->

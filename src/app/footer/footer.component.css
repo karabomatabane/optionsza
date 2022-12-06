@@ -1,0 +1,16 @@
+.footer-logo {
+    color: var(--primary);
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.footer-body {
+    font-size: 1.1em;
+    font-weight: 500;
+    margin-top: auto;
+    opacity: .4;
+}
+
+.footer_section {
+    margin-top: 5rem;
+}

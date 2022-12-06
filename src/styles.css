@@ -1,1 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Urbanist:wght@400;500&display=swap');
+
+:root {
+    --primary: #7CB9E8;
+    --secondary: #002D62
+}
+
+body { 
+    padding-top: 44px; 
+}
+
+.wrapper {
+    padding: 64px 264px;
+    margin: 0 auto;
+  }
+
+  .toptext {
+    color: black;
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.bodytext {
+    color: black;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+.subheader {
+    color: black;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+.subheader2 {
+    letter-spacing: .1em;
+    color: black;
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.header1 {
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: .1em;
+    margin-top: 3rem;
+    text-align: center;
+    font-weight: 700;
+    color: var(--primary);
+}
+
+.header2 {
+    font-family: 'DM Serif Display', serif;
+    color: #000000;
+    text-align: center;
+    letter-spacing: .1em;
+}
+
+.normal {
+    font-family: 'Urbanist', sans-serif;
+    letter-spacing: .1em;
+    margin-top: 2rem;
+    font-weight: 100;
+    font-size: small;
+    text-align: center;
+}
+
+.mybtn {
+    font-family: 'Urbanist', sans-serif;
+    background-color: var(--secondary);
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    filter: drop-shadow(1px 4px 6px #b9b9b9)
+}
+
+.mybtn:hover {
+    background-color: var(--primary);
+}
+
+input, input:focus {
+    border: none;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+img {
+    border-radius: 35px;
+}
 /* You can add global styles to this file, and also import other style files */
